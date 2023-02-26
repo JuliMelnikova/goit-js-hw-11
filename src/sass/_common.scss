@@ -1,1 +1,28 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background: linear-gradient(-45deg, #e66465, #9198e5);
+    background-size: 400% 400%;
+    height: 100vh;
+}
+
+.container {
+    width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.search-form {
+    background: #f4f4f4;
+    background: rgba(244, 244, 244, .79);
+    border: 1px solid #d3d3d3;
+    display: flex;
+    padding: 2px 5px;
+    max-width: 330px;
+}
+
