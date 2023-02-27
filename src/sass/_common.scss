@@ -6,23 +6,100 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 1400px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+form {
     display: flex;
-    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
     justify-content: center;
+    padding: 15;
+    opacity: 0.95;
     }
+    
+input {
+    padding: 9px;
+    width: 20rem;
+    background-color: mediumslateblue;
+    border-right: none;
 
-.search-form {
-    background: #f4f4f4;
-    background: rgba(244, 244, 244, .79);
-    border: 1px solid #d3d3d3;
-    display: flex;
-    padding: 2px 5px;
-    max-width: 330px;
+    transition-duration: 500ms;
 }
 
+button {
+    background-color: aqua;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid aquamarine;
+
+    letter-spacing: 1.5;
+    color: black;
+    transition-duration: 500ms;
+
+    &:hover,
+    &:focus {
+        background-color: dodgerblue;
+        color: white;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    row-gap: 25px;
+    flex-basis: auto;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 20px;
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.photo-card_wrapper {
+    flex-basis: calc((100% - 45px) / 4);
+    transition-duration: 300ms;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.03);
+    }
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 10px;
+
+    border-radius: 20px;
+    background-color:mediumpurple;
+}
+
+img {
+    width: 100%;
+    height: 14rem;
+    border-radius: 20px;
+}
+
+.info-item {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+}
+
+.load-more {
+    border-radius: 20px;
+    min-width: 120px;
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
